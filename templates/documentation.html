@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IPL API Documentation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f7f7f7;
+            color: #333;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        header h1 {
+            font-size: 2em;
+            color: #007bff;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 1.2em;
+            color: #666;
+            margin-bottom: 20px;
+        }
+
+        section {
+            margin-bottom: 30px;
+        }
+
+        h2 {
+            font-size: 1.5em;
+            color: #007bff;
+            margin-bottom: 15px;
+        }
+
+        p {
+            font-size: 1.1em;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        ul {
+            list-style-type: disc;
+            padding-left: 20px;
+            margin-bottom: 20px;
+        }
+
+        a {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            text-align: center;
+            padding-top: 50px;
+            color: #666;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>IPL API Documentation</h1>
+        </header>
+
+        <section>
+            <h2>Overview</h2>
+            <p>Welcome to the IPL API documentation. This documentation provides details on how to use the API to access IPL data.</p>
+        </section>
+
+        <section>
+            <h2>Authentication</h2>
+            <p>The IPL API requires authentication using API keys. To authenticate, include your API key in the request headers.</p>
+            <p><code>Authorization: Bearer your-api-key</code></p>
+        </section>
+
+        <section>
+            <h2>Endpoints</h2>
+            <p>Here are the available endpoints:</p>
+            <ul>
+                <li><strong>/api/teams</strong>: Retrieves information about IPL teams.</li>
+                <li><strong>/api/teamvteam?team1={team1}&team2={team2}</strong>: Compares the performance of two teams.</li>
+                <li><strong>/api/team-record?team={team}</strong>: Retrieves analysis data for a specific team.</li>
+                <li><strong>/api/batting-record?batsman={batsman}</strong>: Retrieves batting records for a specific batsman.</li>
+                <li><strong>/api/bowling-record?bowler={bowler}</strong>: Retrieves bowling records for a specific bowler.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Usage</h2>
+            <p>To use the API, make HTTP requests to the relevant endpoints using appropriate query parameters.</p>
+            <p>For example:</p>
+            <p><code>GET /api/teams</code></p>
+            <p>This request retrieves information about all IPL teams.</p>
+        </section>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 IPL API. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

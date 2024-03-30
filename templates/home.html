@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IPL API Homepage</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f7f7f7;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header h1 {
+            font-size: 2em;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 1.2em;
+            color: #666;
+            margin-bottom: 20px;
+        }
+
+        section {
+            margin-bottom: 30px;
+        }
+
+        h2 {
+            font-size: 1.5em;
+            color: #333;
+            margin-bottom: 15px;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        li {
+            font-size: 1.1em;
+            margin-bottom: 10px;
+        }
+
+        a.button {
+            display: inline-block;
+            padding: 10px 20px;
+            text-decoration: none;
+            color: #fff;
+            background-color: #007bff;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+            margin-right: 10px;
+        }
+
+        a.button:hover {
+            background-color: #0056b3;
+        }
+
+        footer {
+            text-align: center;
+            padding-top: 50px;
+            color: #666;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>IPL API</h1>
+            <p>Source for IPL data</p>
+        </header>
+        <section>
+            <h2>Features</h2>
+            <ul>
+                <li>Retrieve information about IPL teams.</li>
+                <li>Access batting records of players.</li>
+                <li>Retrieve bowling statistics for players.</li>
+            </ul>
+        </section>
+        <section>
+            <h2>Get Started</h2>
+            <p>Use our API to get valuable insights into IPL matches.</p>
+            <a href="/api/teams" class="button">Explore Teams</a>
+            <a href="/api/batting-record?batsman=V Kholi" class="button">Batsman Record</a>
+            <a href="/api/teamvteam?team1=Chennai Super Kings&team2=Royal Challengers Bangalore" class="button">Compare Teams</a>
+        </section>
+        <section>
+            <h2>Documentation</h2>
+            <p>For detailed information on how to use our API, please refer to our documentation.</p>
+            <a href="/documentation" class="button">API Documentation</a>
+        </section>
+        <footer>
+            <p>&copy; 2024 IPL API. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>
